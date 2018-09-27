@@ -1,0 +1,103 @@
+{
+    "dependencies": [],
+    "singleton": false,
+    "category": "security",
+    "author": "Ola Wallin",
+    "homepage": "https://github.com/nanab",
+    "icon": "icon.png",
+    "moduleName": "ControlSpcWebGateway",
+    "version": "1.0.0",
+    "maturity": "stable",
+    "repository": {
+        "type": "git",
+        "source": "https://github.com/nanab/ControlSpcWebGateway"
+    },
+    "defaults": {
+        "title": "__m_title__",
+        "description": "__m_descr__",
+        "url": "http://192.168.1.10:8088",
+        "userKey": "",
+        "passwordKey": "",
+        "dT": 30000,
+        "showPartAreaA": false,
+        "showPartAreaB": false,
+        "fullAreaTitle": "Full",
+        "partAreaATitle": "Part A",
+        "partAreaBTitle": "Part B"    
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "url": {
+                "type": "string",
+                "required": true
+            },
+            "userKey": {
+                "type": "string",
+                "required": false
+            },
+            "passwordKey": {
+                "type": "string",
+                "required": false
+            },
+            "dT": {
+                "type": "number",
+                "required": true
+            },
+            "showPartAreaA": {
+                "type": "boolean"
+            },
+            "showPartAreaB": {
+                "type": "boolean"
+            },
+            "fullAreaTitle": {
+                "type": "string",
+                "required": true
+            },
+            "partAreaATitle": {
+                "type": "string",
+                "required": false
+            },
+            "partAreaBTitle": {
+                "type": "string",
+                "required": false
+            }
+        }
+    },
+    "options": {
+		"main":{
+			"fields": {
+				"url": {
+					"label": "__l_url__"
+				},
+				"userKey": {
+					"label": "__l_userKey__"
+				},
+				"passwordKey": {
+					"label": "__l_passwordKey__"
+				},
+				"dT": {
+					"label": "__l_dT__"
+				}
+		},
+		"area":{
+			"fields":{
+				"showPartAreaA": {
+					"label": "__l_showPartAreaA__"
+				},
+				"showPartAreaB": {
+					"label": "__l_showPartAreaB__"
+				},
+				"fullAreaTitle": {
+					"label": "__l_fullAreaTitle__"
+				},
+				"partAreaATitle": {
+					"label": "__l_partAreaATitle__"
+				},
+				"partAreaBTitle": {
+					"label": "__l_partAreaBTitle__"
+				}
+			}
+		}
+    }
+}
